@@ -35,4 +35,26 @@ describe("acceptNumbersOnly", function(){
     })
 })
 // Question 4
+describe("mergeArrays", function(){
+    it("sorted combined arrays", function(){
+        expect(mergeArrays([2,1],[3,4])).toEqual([1,2,3,4])
+    })
+})
 // Question 5
+describe("mergeObjects", function(){
+    it("returns two merged objects", function(){
+        var obj1 = {
+            name: "Foo",
+            num: 33
+        }
+        var obj2 = {
+            test: "thing",
+            num: 55
+        }
+        expect(mergeObjects(obj1, obj2)).toEqual({
+            name: "Foo",
+            test: "thing",
+            num: 55
+        })
+    })
+})
