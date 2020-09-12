@@ -1,8 +1,8 @@
 // Question 1
-function replaceWith(str, replace, replaceWith){
+function replaceWith(str, charReplace, replaceWith){
     let result = ""
     for(var i =0; i < str.length; i++){
-        if(str[i] === replace){
+        if(str[i] === charReplace){
             result += replaceWith;
     } else{
     result += str[i];
